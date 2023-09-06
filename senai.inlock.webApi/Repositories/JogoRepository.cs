@@ -105,7 +105,17 @@ namespace senai.inlock.webApi_.Repositories
 
         public List<JogoDomain> ListarTodos()
         {
-            throw new NotImplementedException();
+            List<JogoDomain> listarJogos = new List<JogoDomain>();
+
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string querySelectAll = "SELECT IdJogo, IdEstudio, Nome, Descricao, DataLancamento, Valor FROM Jogo";
+
+                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                {
+
+                }
+            }
         }
     }
 }
