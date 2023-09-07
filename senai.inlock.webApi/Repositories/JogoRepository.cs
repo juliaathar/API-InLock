@@ -7,7 +7,8 @@ namespace senai.inlock.webApi_.Repositories
 {
     public class JogoRepository : IJogoRepository
     {
-        private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
+        //private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
+        private string stringConexao = "Data Source = DESKTOP-H35FC4N; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = 1976";
         public void Atualizar(JogoDomain jogo)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
@@ -111,11 +112,31 @@ namespace senai.inlock.webApi_.Repositories
             {
                 string querySelectAll = "SELECT IdJogo, IdEstudio, Nome, Descricao, DataLancamento, Valor FROM Jogo";
 
+                con.Open();
+
+                SqlDataReader rdr;
+
                 using (SqlCommand cmd = new SqlCommand(stringConexao, con))
                 {
+                    rdr = cmd.ExecuteReader();
 
+                    while (rdr.Read())
+                    {
+                        JogoDomain jogo = new JogoDomain
+                        {
+                            IdJogo = Convert.ToInt32(rdr["IdJogo"]),
+                            IdEstudio = Convert.ToInt32(rdr["IdEstudio"]),
+                            Nome = rdr["Nome"].ToString(),
+                            Descricao = rdr["Descricao"].ToString(),
+                            DataLancamento = Convert.ToDateTime(rdr["DataLancamento"]),
+                            Valor = Convert.ToSingle(rdr["Valor"])
+                        };
+
+                        listarJogos.Add(jogo);
+                    }
                 }
             }
+            return listarJogos;
         }
     }
 }

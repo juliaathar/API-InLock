@@ -11,7 +11,7 @@ namespace senai.inlock.webApi_.Repositories
         /// <summary>
         /// String de conexao com o banco de dados
         /// </summary>
-        private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
+        private string stringConexao = "Data Source = DESKTOP-H35FC4N; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = 1976";
         public void Cadastrar(EstudioDomain novoEstudio)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
@@ -66,7 +66,7 @@ namespace senai.inlock.webApi_.Repositories
                     {
                         EstudioDomain estudio = new EstudioDomain
                         {
-                            IdEstudio = Convert.ToInt32(rdr[("IdGenero")]),
+                            IdEstudio = Convert.ToInt32(rdr[("IdEstudio")]),
                             Nome = rdr["Nome"].ToString()
                         };
 
