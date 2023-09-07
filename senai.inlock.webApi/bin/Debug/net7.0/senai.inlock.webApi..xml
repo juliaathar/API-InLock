@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.inlock.webApi.</name>
+    </assembly>
+    <members>
+        <member name="M:senai.inlock.webApi_.Interfaces.IEstudioRepository.Cadastrar(senai.inlock.webApi_.Domains.EstudioDomain)">
+            <summary>
+            Método para cadastrar novos estúdios
+            </summary>
+            <param name="novoEstudio">Novo objeto que será criado</param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IEstudioRepository.ListarTodos">
+            <summary>
+            Método para listar os estúdios cadastrados
+            </summary>
+            <returns>Lista com objetos cadastrados</returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IEstudioRepository.Deletar(System.Int32)">
+            <summary>
+            Método para deletar um estúdio passando seu id 
+            </summary>
+            <param name="id">argumento que permitirá encontrar o estúdio para deletá-lo</param>
+        </member>
+        <member name="F:senai.inlock.webApi_.Repositories.EstudioRepository.stringConexao">
+            <summary>
+            String de conexao com o banco de dados
+            </summary>
+        </member>
+    </members>
+</doc>
