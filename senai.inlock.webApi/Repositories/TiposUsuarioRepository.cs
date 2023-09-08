@@ -20,7 +20,7 @@ namespace senai.inlock.webApi_.Repositories
 
                 SqlDataReader rdr;
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
                 {
                     rdr = cmd.ExecuteReader();
 

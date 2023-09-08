@@ -38,3 +38,11 @@ C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\obj\Deb
 C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\obj\Debug\net7.0\ref\senai.inlock.webApi..dll
 C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\senai.inlock.webApi..xml
 C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\obj\Debug\net7.0\senai.inlock.webApi..xml
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aquar\OneDrive\Área de Trabalho\API-InLock\senai.inlock.webApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

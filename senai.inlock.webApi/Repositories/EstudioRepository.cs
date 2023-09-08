@@ -18,7 +18,7 @@ namespace senai.inlock.webApi_.Repositories
             {
                 string queryInsert = "INSERT INTO Estudio (Nome) VALUES (@Nome)";
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
                     cmd.Parameters.AddWithValue("Nome", novoEstudio.Nome);
 
@@ -35,7 +35,7 @@ namespace senai.inlock.webApi_.Repositories
             {
                 string queryDelete = "DELETE FROM Estudio WHERE IdEstudio = @IdEstudio";
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
                 {
                     cmd.Parameters.AddWithValue("@IdEstudio", id);
 
@@ -58,15 +58,16 @@ namespace senai.inlock.webApi_.Repositories
 
                 SqlDataReader rdr;
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
                 {
                     rdr = cmd.ExecuteReader();
 
                     while (rdr.Read())
                     {
-                        EstudioDomain estudio = new EstudioDomain
+                        EstudioDomain estudio = new EstudioDomain()
                         {
                             IdEstudio = Convert.ToInt32(rdr[("IdEstudio")]),
+
                             Nome = rdr["Nome"].ToString()
                         };
 

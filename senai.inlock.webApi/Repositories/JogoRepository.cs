@@ -17,7 +17,7 @@ namespace senai.inlock.webApi_.Repositories
 
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
                 {
                     cmd.Parameters.AddWithValue("IdEstudio", jogo.IdEstudio);
                     cmd.Parameters.AddWithValue("Nome", jogo.Nome);
@@ -74,7 +74,7 @@ namespace senai.inlock.webApi_.Repositories
 
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
                     cmd.Parameters.AddWithValue("IdEstudio", novoJogo.IdEstudio);
                     cmd.Parameters.AddWithValue("Nome", novoJogo.Nome);
@@ -95,7 +95,7 @@ namespace senai.inlock.webApi_.Repositories
 
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
                 {
                     cmd.Parameters.AddWithValue("@IdJogo", id);
 
@@ -116,7 +116,7 @@ namespace senai.inlock.webApi_.Repositories
 
                 SqlDataReader rdr;
 
-                using (SqlCommand cmd = new SqlCommand(stringConexao, con))
+                using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
                 {
                     rdr = cmd.ExecuteReader();
 
