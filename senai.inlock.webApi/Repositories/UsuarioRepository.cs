@@ -6,9 +6,7 @@ namespace senai.inlock.webApi_.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        //private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
-        private string stringConexao = "Data Source = DESKTOP-H35FC4N; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = 1976";
-
+        private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
         public UsuarioDomain Login(string Email, string Senha)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))

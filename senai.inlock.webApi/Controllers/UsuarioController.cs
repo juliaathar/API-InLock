@@ -20,6 +20,11 @@ namespace senai.inlock.webApi_.Controllers
             _usuarioRepository = new UsuarioRepository();
         }
 
+        /// <summary>
+        /// endpoint que aciona o método de login do usuario
+        /// </summary>
+        /// <param name="usuarioLogin"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post(UsuarioDomain usuarioLogin)
         {

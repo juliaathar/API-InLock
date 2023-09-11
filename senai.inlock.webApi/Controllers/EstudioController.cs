@@ -20,6 +20,10 @@ namespace senai.inlock.webApi_.Controllers
             _estudioRepository = new EstudioRepository();
         }
 
+        /// <summary>
+        /// endpoint que aciona o método de listar estúdios
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -35,6 +39,11 @@ namespace senai.inlock.webApi_.Controllers
             }
         }
 
+        /// <summary>
+        /// endpoint que aciona o método de cadastrar estúdios
+        /// </summary>
+        /// <param name="novoEstudio"></param>
+        /// <returns></returns>
         [HttpPost]
         [Authorize(Roles = "1")]
         public IActionResult Post(EstudioDomain novoEstudio)
@@ -51,7 +60,11 @@ namespace senai.inlock.webApi_.Controllers
             }
         }
 
-
+        /// <summary>
+        /// endpoint que aciona o método de deletar estúdios
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         [Authorize(Roles = "1")]
         public IActionResult Delete(int id)

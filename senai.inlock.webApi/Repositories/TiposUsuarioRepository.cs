@@ -6,7 +6,7 @@ namespace senai.inlock.webApi_.Repositories
 {
     public class TiposUsuarioRepository : ITiposUsuarioRepository
     {
-        private string stringConexao = "Data Source = DESKTOP-H35FC4N; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = 1976";
+        private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
 
         public List<TiposUsuarioDomain> ListarTodos()
         {

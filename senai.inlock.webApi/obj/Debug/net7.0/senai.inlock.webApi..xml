@@ -4,6 +4,73 @@
         <name>senai.inlock.webApi.</name>
     </assembly>
     <members>
+        <member name="M:senai.inlock.webApi_.Controllers.EstudioController.Get">
+            <summary>
+            endpoint que aciona o método de listar estúdios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.EstudioController.Post(senai.inlock.webApi_.Domains.EstudioDomain)">
+            <summary>
+            endpoint que aciona o método de cadastrar estúdios
+            </summary>
+            <param name="novoEstudio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.EstudioController.Delete(System.Int32)">
+            <summary>
+            endpoint que aciona o método de deletar estúdios
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.Get">
+            <summary>
+            endpoint que aciona o método de listar jogos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.Post(senai.inlock.webApi_.Domains.JogoDomain)">
+            <summary>
+            endpoint que aciona o método de cadastrar jogos
+            </summary>
+            <param name="novoJogo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.Delete(System.Int32)">
+            <summary>
+            endpoint que aciona o método de deletar jogos
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.GetById(System.Int32)">
+            <summary>
+            endpoint que aciona o método de pesquisar um jogo pelo seu id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.Put(senai.inlock.webApi_.Domains.JogoDomain)">
+            <summary>
+            endpoint que aciona o método de atualizar os dados de um jogo
+            </summary>
+            <param name="jogo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.TiposUsuarioController.Get">
+            <summary>
+            endpoint que aciona o método de listar os tipos de usuario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.UsuarioController.Post(senai.inlock.webApi_.Domains.UsuarioDomain)">
+            <summary>
+            endpoint que aciona o método de login do usuario
+            </summary>
+            <param name="usuarioLogin"></param>
+            <returns></returns>
+        </member>
         <member name="M:senai.inlock.webApi_.Interfaces.IEstudioRepository.Cadastrar(senai.inlock.webApi_.Domains.EstudioDomain)">
             <summary>
             Método para cadastrar novos estúdios

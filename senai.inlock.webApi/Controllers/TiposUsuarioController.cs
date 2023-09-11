@@ -17,6 +17,10 @@ namespace senai.inlock.webApi_.Controllers
             _tiposUsuarioRepository = new TiposUsuarioRepository();
         }
 
+        /// <summary>
+        /// endpoint que aciona o método de listar os tipos de usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {

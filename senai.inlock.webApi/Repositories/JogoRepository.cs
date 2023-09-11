@@ -7,8 +7,7 @@ namespace senai.inlock.webApi_.Repositories
 {
     public class JogoRepository : IJogoRepository
     {
-        //private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
-        private string stringConexao = "Data Source = DESKTOP-H35FC4N; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = 1976";
+        private string stringConexao = "Data Source = NOTE15-S14; Initial Catalog = inlock_games_manha; User Id = sa; Pwd = Senai@134";
         public void Atualizar(JogoDomain jogo)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
