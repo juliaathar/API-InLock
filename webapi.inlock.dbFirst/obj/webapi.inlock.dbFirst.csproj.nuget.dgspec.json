@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47447272809\\Desktop\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj": {}
+    "C:\\Users\\47447272809\\Desktop\\API-InLock\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47447272809\\Desktop\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj": {
+    "C:\\Users\\47447272809\\Desktop\\API-InLock\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47447272809\\Desktop\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj",
+        "projectUniqueName": "C:\\Users\\47447272809\\Desktop\\API-InLock\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj",
         "projectName": "webapi.inlock.dbFirst",
-        "projectPath": "C:\\Users\\47447272809\\Desktop\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj",
+        "projectPath": "C:\\Users\\47447272809\\Desktop\\API-InLock\\webapi.inlock.dbFirst\\webapi.inlock.dbFirst.csproj",
         "packagesPath": "C:\\Users\\47447272809\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47447272809\\Desktop\\webapi.inlock.dbFirst\\obj\\",
+        "outputPath": "C:\\Users\\47447272809\\Desktop\\API-InLock\\webapi.inlock.dbFirst\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\47447272809\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
