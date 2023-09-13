@@ -15,7 +15,7 @@ namespace webapi.inlock.dbFirst.Repositories
 
         public Estudio BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return ctx.Estudios.FirstOrDefault(e => e.IdEstudio == id);
         }
 
         public void Cadastrar(Estudio estudio)

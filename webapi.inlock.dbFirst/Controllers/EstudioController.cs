@@ -43,5 +43,18 @@ namespace webapi.inlock.dbFirst.Controllers
                 return BadRequest(erro.Message);
             }
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            try
+            {
+                return Ok(_estudioRepository.BuscarPorId(id));
+            }
+            catch(Exception erro)
+            {
+                return BadRequest(erro.Message);
+            }
+        }
     }
 }
