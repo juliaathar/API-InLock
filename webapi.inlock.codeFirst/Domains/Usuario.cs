@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace webapi.inlock.codeFirst.Domains
 {
     [Table("Usuario")]
+    [Index(nameof(Email), IsUnique = true)] //cria um índice único para
     public class Usuario
     {
         [Key]
@@ -22,6 +24,6 @@ namespace webapi.inlock.codeFirst.Domains
         public Guid IdTipoUsuario { get; set; }
 
         [ForeignKey("IdTipoUsuario")]
-        public TiposUsuario TiposUsuario { get; set; }
+        public TiposUsuario? TiposUsuario { get; set; }
     }
 }

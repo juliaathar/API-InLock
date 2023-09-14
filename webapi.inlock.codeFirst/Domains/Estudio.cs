@@ -13,6 +13,6 @@ namespace webapi.inlock.codeFirst.Domains
         [Required(ErrorMessage = "Nome do estúdio obrigatório")]
         public string? Nome { get; set; }
 
-        public List<Jogo> Jogo { get; set; }
+        public List<Jogo>? Jogo { get; set; }
     }
 }

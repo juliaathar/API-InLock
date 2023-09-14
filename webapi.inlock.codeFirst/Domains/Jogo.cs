@@ -17,7 +17,7 @@ namespace webapi.inlock.codeFirst.Domains
 
         [Column(TypeName = "TEXT")]
         [Required(ErrorMessage = "Descricao obrigatória")]
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
 
 
         [Column(TypeName = "DATE")]
@@ -34,6 +34,6 @@ namespace webapi.inlock.codeFirst.Domains
         public Guid IdEstudio { get; set; }
 
         [ForeignKey("IdEstudio")]
-        public Estudio Estudio { get; set; }
+        public Estudio? Estudio { get; set; }
     }
 }
