@@ -15,9 +15,9 @@ namespace webapi.inlock.codeFirst.Domains
         [Required(ErrorMessage = "Email obrigatório")]
         public string? Email { get; set; }
 
-        [Column(TypeName = "VARCHAR(100)")]
+        [Column(TypeName = "VARCHAR(200)")]
         [Required(ErrorMessage = "Senha obrigatória")]
-        [StringLength(20, MinimumLength = 6, ErrorMessage = "Senha deve ter de 6 a 20 caracteres")]
+        [StringLength(200, MinimumLength = 6, ErrorMessage = "Senha deve ter de 6 a 20 caracteres")]
         public string? Senha { get; set; }
 
         [Required(ErrorMessage = "Tipo do usuario obrigatorio")]
